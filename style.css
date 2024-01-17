@@ -40,24 +40,6 @@ body.dark{
 	--text-color: #CCC;
 }
 
-/** Haut de page **/
-
-/*header{
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	margin: auto;
-	text-align: center;
-	font-size: 40px;
-	border-width: 1px;
-	border-style: solid;
-	background: var(--sidebar-color);
-	color: var(--text-color);
-	transition: var(--tran-05);
-	z-index: 20;
-}*/
-
 /* ===== Sidebar ===== */
 
 .sidebar{
