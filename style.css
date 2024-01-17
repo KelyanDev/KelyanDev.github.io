@@ -345,6 +345,10 @@ body.dark .switch::before{
 	display: flex;
 }
 
+.grand{
+	cursor: pointer;
+}
+
 .screens{
 	margin: 10px;
 	height: 25%;
