@@ -325,6 +325,7 @@ body.dark .switch::before{
 
 .aligne{
 	display: flex;
+	justify-content: center;
 }
 
 .grand{
