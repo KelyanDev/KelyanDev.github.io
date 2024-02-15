@@ -10,12 +10,15 @@
 
 :root{
 	/* ===== Couleurs ===== */
-	--body-color: #E4E9F7;
+	--body-color: #e5f0f9;
 	--sidebar-color: #FFF;
 	--primary-color: #308EC4;
-	--primary-color-light: #F6F5FF;
+	--primary-color-light: #f2f8fd;
 	--toggle-color: #DDD;
 	--text-color: #707070;
+	--title-color: #F6F5FF;
+	--sub-title-color: #56aada;
+	--jauge-color: #92c9e7;
 
 	/* ===== Transition ===== */
 	--tran-02: all 0.2s ease;
@@ -34,10 +37,13 @@ body{
 body.dark{
 	--body-color: #18191A;
 	--sidebar-color: #242526;
-	--primary-color: #3A3B3C;
+	--primary-color: #1e3242;
 	--primary-color-light: #3A3B3C;
 	--toggle-color: #FFF;
 	--text-color: #CCC;
+	--title-color: #CCC;
+	--sub-title-color: #91c7e8;
+	--jauge-color: #1c5c88;
 }
 
 /* ===== Sidebar ===== */
@@ -112,7 +118,6 @@ body.dark{
 	list-style: none;
 	display: flex;
 	align-items: center;
- 
 }
 
 .sidebar li a{
@@ -131,7 +136,7 @@ body.dark{
  
 .sidebar li a:hover .icons,
 .sidebar li a:hover .text{
-   color: var(--sidebar-color)
+   color: var(--title-color)
 }
 
 .sidebar li .icons{
@@ -141,7 +146,6 @@ body.dark{
 	font-size: 20px;
 	min-width: 60px;
 }
-
 
 .sidebar li .icons,
 .sidebar li .text{
@@ -301,15 +305,20 @@ body.dark .switch::before{
 	margin-bottom: 10px;
 }
 
+#Apropos h3{
+	position: inherit;
+	margin-right: 220px;
+}
+
 #Apropos p{
 	position: inherit;
-	margin-right: 190px;
+	margin-right: 220px;
 }
 
 #Apropos .photo{
 	position: absolute ;
 	display: block;
-	top: 10px;
+	top: 90px;
 	right: 10px;
 	width: 200px;
 	height: 180px;
@@ -319,8 +328,8 @@ body.dark .switch::before{
 	display: block;
 	margin: auto;
 	border-radius: 4px;
-	height: 212px;
-	width: 165px;
+	height: 254px;
+	width: 198px;
 }
 
 .aligne{
@@ -339,6 +348,14 @@ body.dark .switch::before{
 	border-radius: 4px;
 }
 
+.titre{
+	background-color: var(--primary-color);
+	color: var(--title-color);
+	border-radius: 6px;
+	padding-left: 8px;
+	transition: var(--tran-05);
+}
+
 /** Bouton CV **/
 
 .liste .DL{
@@ -347,6 +364,7 @@ body.dark .switch::before{
 	display: flex;
 	align-items: center;
 	border-radius: 6px;
+	margin-top: 10px;
 	background: var(--primary-color-light);
 	transition: var(--tran-05);
 }
@@ -389,6 +407,7 @@ body.dark .switch::before{
 
 .souligne{
 	text-decoration: underline;
+	color: var(--sub-title-color);
 }
 
 .italique{
@@ -413,7 +432,7 @@ body.dark .switch::before{
 }
 
 .jauge::-webkit-meter-optimum-value{
-	background: var(--primary-color);
+	background: var(--jauge-color);
 	transition: var(--tran-04);
 }
 
