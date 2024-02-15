@@ -358,9 +358,10 @@ body.dark .switch::before{
 
 /** Bouton CV **/
 
-.liste .DL{
+.liste .GButton{
 	height: 40px;
-	width: 200px;
+	width: -moz-fit-content;
+	width: fit-content;
 	display: flex;
 	align-items: center;
 	border-radius: 6px;
@@ -369,7 +370,7 @@ body.dark .switch::before{
 	transition: var(--tran-05);
 }
 
-.liste .DL .icon{
+.liste .GButton .icon{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -377,15 +378,16 @@ body.dark .switch::before{
 	font-size: 20px;
 }
 
-.liste .DL .icon,
-.liste .DL .down{
+.liste .GButton .icon,
+.liste .GButton .down{
 	color: var(--text-color);
 	transition: var(--tran-03);
 }
 
-.liste .DL a{
+.liste .GButton a{
 	height: 100%;
 	width: 100%;
+	padding-right: 10px;
 	display: flex;
 	align-items: center;
 	text-decoration: none;
@@ -394,13 +396,13 @@ body.dark .switch::before{
 	transition: var(--tran-04);
 }
 
-.liste .DL a:hover{
+.liste .GButton a:hover{
 	background-color: var(--primary-color);
 }
 
-.liste .DL a:hover .icon,
-.liste .DL a:hover .down{
-	color: var(--sidebar-color);
+.liste .GButton a:hover .icon,
+.liste .GButton a:hover .down{
+	color: var(--title-color);
 }
 
 /** Texte **/
@@ -438,9 +440,10 @@ body.dark .switch::before{
 
 /** Bouton Linkedin  **/
 
-.liste .lien{
+.liste .TButton{
 	height: 30px;
-	width: 110px;
+	width: -moz-fit-content;
+	width: fit-content;
 	display: inline flex;
 	align-items: center;
 	border-radius: 6px;
@@ -448,7 +451,7 @@ body.dark .switch::before{
 	transition: var(--tran-05);
 }
 
-.liste .lien .icon{
+.liste .TButton .icon{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -456,15 +459,16 @@ body.dark .switch::before{
 	font-size: 20px;
 }
 
-.liste .lien .icon,
-.liste .lien .linke{
+.liste .TButton .icon,
+.liste .TButton .linke{
 	color: var(--text-color);
 	transition: var(--tran-03);
 }
 
-.liste .lien a{
+.liste .TButton a{
 	height: 100%;
 	width: 100%;
+	padding-right: 10px;
 	display: flex;
 	align-items: center;
 	text-decoration: none;
@@ -472,11 +476,11 @@ body.dark .switch::before{
 	transition: var(--tran-04);
 }
 
-.liste .lien a:hover{
+.liste .TButton a:hover{
 	background-color: var(--primary-color);
 }
 
-.liste .lien a:hover .icon,
-.liste .lien a:hover .linke{
-	color: var(--sidebar-color);
+.liste .TButton a:hover .icon,
+.liste .TButton a:hover .linke{
+	color: var(--title-color);
 }
