@@ -17,4 +17,4 @@ My Portfolio Website, which you can find by clicking here: https://kelyandev.git
 </div>
 
 >[!NOTE]
->Do note that this portfolio will be updated overtime
+>I'll try to always keep this web page updated
