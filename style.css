@@ -10,12 +10,12 @@
 
 :root{
 	/* ===== Couleurs Primaires ===== */
-	--primary-color: #308EC4; /* Curious Blue 500 */
-	--sub-title-color: #56aada; /* Curious Blue 400 */
-	--jauge-color: #92c9e7; /* Curious Blue 300 */
-	--back-p-color: #c5e1f2; /* Curious Blue 200 */
-	--body-color: #e5f0f9; /* Curious Blue 100 */
-	--primary-color-light: #f2f8fd; /* Curious Blue 50 */
+	--primary-color: #308EC4; 			/* Curious Blue 500 */
+	--sub-title-color: #56aada; 		/* Curious Blue 400 */
+	--jauge-color: #92c9e7; 			/* Curious Blue 300 */
+	--back-p-color: #c5e1f2; 			/* Curious Blue 200 */
+	--body-color: #e5f0f9; 			/* Curious Blue 100 */
+	--primary-color-light: #f2f8fd; 	/* Curious Blue 50 */
 
 	/* ===== Couleurs Secondaires ===== */
 	--sidebar-color: #FFF;
@@ -38,15 +38,64 @@ body{
 }
 
 body.dark{
-	--body-color: #18191A;
+	/* ===== Couleurs Primaires ===== */
+	--primary-color: #264154; 			/* Elephant 900 */
+	--sub-title-color: #294c63; 		/* Elephant 800 */
+	--jauge-color: #2d5a77; 			/* Elephant 700 */
+	--back-p-color: #488aaf; 			/* Elephant 500 */
+	--body-color: #18191A;				/* Woodsmoke 950 */
+	--primary-color-light: #3A3B3C; 	/* Tuatara 900 */
+
+	/* ===== Couleurs Secondaires ===== */
 	--sidebar-color: #242526;
-	--primary-color: #1e3242;
-	--primary-color-light: #3A3B3C;
 	--toggle-color: #FFF;
 	--text-color: #CCC;
 	--title-color: #CCC;
-	--sub-title-color: #91c7e8;
-	--jauge-color: #1c5c88;
+}
+
+/** Réutilisable **/
+
+.souligne{
+	text-decoration: underline;
+	color: var(--sub-title-color);
+}
+
+.italique{
+	font-style: italic;
+}
+
+.texte{
+	margin-left: 10px;
+}
+
+.liste ul{
+	margin-left: 20px;
+}
+
+.aligne{
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.grand{
+	cursor: pointer;
+}
+
+.screens{
+	margin: 10px;
+	height: 25%;
+	width: 25%;
+	border-radius: 4px;
+}
+
+.titre{
+	background-color: var(--primary-color);
+	color: var(--title-color);
+	border-radius: 6px;
+	padding-left: 8px;
+	transition: var(--tran-05);
 }
 
 /* ===== Sidebar ===== */
@@ -311,6 +360,8 @@ body.dark .switch::before{
 	margin-bottom: 10px;
 }
 
+/* A propos de moi */
+
 #Apropos h3{
 	position: inherit;
 	margin-right: 220px;
@@ -338,30 +389,164 @@ body.dark .switch::before{
 	width: 198px;
 }
 
-.aligne{
+/* Compétences - Progress Bar */
+
+.comp{
+	display: flex;
+	align-items: top;
+	margin: 10px;
+	margin-bottom: 40px;
+	padding: 10px;
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: var(--jauge-color);
+	background-color: var(--body-color);
+	transition: var(--tran-04);
+}
+
+.comp .text{
+	font-size: 20px;
+}
+
+.comp hr{
+	opacity: 0.2;
+}
+
+.resume{
+	color: var(--sub-title-color);
+}
+
+svg{
+	width: 200px;
+	height: 200px;
+	transform: rotate(-90deg);
+}
+
+.cercle{
+	position: relative;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.rc{
+	margin-left: auto;
+}
+
+.Pcercle{
+	stroke: var(--sub-title-color);
+	stroke-dasharray: 502px;
+	transition: var(--tran-04);
+}
+
+.Scercle{
+	stroke: var(--back-p-color);
+	transition: var(--tran-04);
+}
+
+.pourcent{
+	position: absolute;
+	font-size: 28px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-45%, -60%);
+	color: var(--sub-title-color);
+	font-weight: 600;
+	transition: var(--tran-04);
+}
+
+/* Qualités */
+
+.Qligne{
 	display: flex;
 	justify-content: center;
-	margin-left: auto;
-	margin-right: auto;
+	align-items: center;
+	flex-direction: row;
 }
 
-.grand{
-	cursor: pointer;
-}
-
-.screens{
+.qualit{
+	justify-content: space-between;
+	text-align: center;
+	min-height: 270px;
+	width: 400px;
 	margin: 10px;
-	height: 25%;
-	width: 25%;
-	border-radius: 4px;
+	padding: 10px;
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: var(--jauge-color);
+	background-color: var(--body-color);
+	transition: var(--tran-04);
 }
 
-.titre{
-	background-color: var(--primary-color);
-	color: var(--title-color);
-	border-radius: 6px;
-	padding-left: 8px;
-	transition: var(--tran-05);
+.qualit i{
+	margin: 5px;
+	font-size: 60px;
+	color: var(--sub-title-color);
+}
+
+.qualit .text{
+	font-size: 20px;
+}
+
+.qualit h4{
+	margin-top: 5px;
+	margin-bottom: 25px;
+	color: var(--sub-title-color);
+}
+
+/* Langues */
+
+.Lligne{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	padding: 10px;
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: var(--primary-color);
+}
+
+.lang{
+	justify-content: space-between;
+	text-align: center;
+	min-height: 125px;
+	min-width: 175px;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: var(--jauge-color);
+	background-color: var(--body-color);
+	transition: var(--tran-04);
+}
+
+.lang h2{
+	margin: 10px;
+	color: var(--sub-title-color);
+}
+
+/* Projets */
+
+.projects{
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px;
+	margin-bottom: 40px;
+	padding: 2px;
+	background-color: var(--body-color);
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: var(--jauge-color);
+	transition: var(--tran-04);
+}
+
+.projects .souligne{
+	text-align: center;
 }
 
 /** Bouton CV **/
@@ -413,40 +598,7 @@ body.dark .switch::before{
 	color: var(--title-color);
 }
 
-/** Texte **/
-
-.souligne{
-	text-decoration: underline;
-	color: var(--sub-title-color);
-}
-
-.italique{
-	font-style: italic;
-}
-
-.texte{
-	margin-left: 10px;
-}
-
-.liste ul{
-	margin-left: 20px;
-}
-
-/** Jauges **/
-
-.jauge{
-	border: 1px;
-	border-radius: 3px;
-	width: 100px;
-	height: 18px;
-}
-
-.jauge::-webkit-meter-optimum-value{
-	background: var(--jauge-color);
-	transition: var(--tran-04);
-}
-
-/** Bouton Linkedin  **/
+/** Boutons Contact  **/
 
 .liste .TButton{
 	height: 30px;
@@ -491,27 +643,6 @@ body.dark .switch::before{
 .liste .TButton a:hover .icon,
 .liste .TButton a:hover .linke{
 	color: var(--title-color);
-}
-
-
-/* Projets */
-
-.projects{
-	justify-content: space-between;
-	align-items: center;
-	margin: 15px;
-	margin-bottom: 40px;
-	padding: 2px;
-	background-color: var(--body-color);
-	border-radius: 10px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: var(--jauge-color);
-	transition: var(--tran-04);
-}
-
-.projects .souligne{
-	text-align: center;
 }
 
 /* Copyrights */
