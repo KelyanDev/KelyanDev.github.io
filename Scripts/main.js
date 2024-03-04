@@ -8,9 +8,9 @@ const body = document.querySelector("body"),
 		  body.classList.toggle("dark");
 
 		  if(body.classList.contains("dark")){
-			  modeText.innerText = "Mode Clair"
-		  }else{
 			  modeText.innerText = "Mode Sombre"
+		  }else{
+			  modeText.innerText = "Mode Clair"
 		  }
 
 	  });
