@@ -98,6 +98,15 @@ body.dark{
 	transition: var(--tran-05);
 }
 
+.section{
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: var(--jauge-color);
+	background-color: var(--body-color);
+	transition: var(--tran-04);
+}
+
 /* ===== Sidebar ===== */
 
 .sidebar{
@@ -397,12 +406,6 @@ body.dark .switch::before{
 	margin: 10px;
 	margin-bottom: 40px;
 	padding: 10px;
-	border-radius: 10px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: var(--jauge-color);
-	background-color: var(--body-color);
-	transition: var(--tran-04);
 }
 
 .comp .text{
@@ -415,6 +418,7 @@ body.dark .switch::before{
 
 .resume{
 	color: var(--sub-title-color);
+	transition: var(--tran-04);
 }
 
 svg{
@@ -471,12 +475,6 @@ svg{
 	width: 400px;
 	margin: 10px;
 	padding: 10px;
-	border-radius: 10px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: var(--jauge-color);
-	background-color: var(--body-color);
-	transition: var(--tran-04);
 }
 
 .qualit i{
@@ -516,12 +514,6 @@ svg{
 	min-width: 175px;
 	margin: 10px;
 	padding: 10px;
-	border-radius: 10px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: var(--jauge-color);
-	background-color: var(--body-color);
-	transition: var(--tran-04);
 }
 
 .lang h2{
@@ -537,19 +529,55 @@ svg{
 	margin: 15px;
 	margin-bottom: 40px;
 	padding: 2px;
-	background-color: var(--body-color);
-	border-radius: 10px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: var(--jauge-color);
-	transition: var(--tran-04);
 }
 
 .projects .souligne{
 	text-align: center;
 }
 
+/** Divers **/
+
+.passions{
+	justify-content: space-between;
+	align-items: center;
+	width: 700px;
+	margin: 10px;
+	padding: 5px;
+}
+
+.passions h4{
+	margin-top: 5px;
+	color: var(--sub-title-color);
+}
+
+.ligne{
+	width: 90%;
+	border: solid var(--sub-title-color) 1px;
+}
+
+.ligne-haut{
+	margin-top: 30px;
+	height: 85px;
+	border: solid var(--sub-title-color) 1px;
+}
+
+.ligne-bas{
+	margin-bottom: 30px;
+	height: 85px;
+	border: solid var(--sub-title-color) 1px;
+}
+
 /** Bouton CV **/
+
+.cv{
+	width: 414px;
+	border-style: solid;
+	border-width: 5px;
+	border-top-color: var(--back-p-color);
+	border-left-color: var(--back-p-color);
+	border-bottom-color: var(--sub-title-color);
+	border-right-color: var(--sub-title-color);
+}
 
 .liste .GButton{
 	height: 40px;
@@ -599,6 +627,30 @@ svg{
 }
 
 /** Boutons Contact  **/
+
+.cont{
+	justify-content: space-between;
+	text-align: center;
+	min-height: 180px;
+	width: 320px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.cont i{
+	margin: 5px;
+	font-size: 60px;
+	color: var(--sub-title-color);
+}
+
+.cont .text{
+	font-size: 20px;
+}
+
+.cont h4{
+	margin-top: 5px;
+	margin-bottom: 25px;
+}
 
 .liste .TButton{
 	height: 30px;
