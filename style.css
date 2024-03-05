@@ -64,8 +64,8 @@ body.dark{
 	font-style: italic;
 }
 
-.texte{
-	margin-left: 10px;
+.text{
+	font-size: 20px;
 }
 
 .liste ul{
@@ -105,6 +105,16 @@ body.dark{
 	border-color: var(--jauge-color);
 	background-color: var(--body-color);
 	transition: var(--tran-04);
+}
+
+.listing{
+	border-left-style: solid;
+	border-left-color: var(--sub-title-color);
+	border-left-width: 7px;
+	border-radius: 1px;
+	transition: var(--tran-04);
+	padding-left: 5px;
+	margin: 20px;
 }
 
 /* ===== Sidebar ===== */
@@ -398,6 +408,29 @@ body.dark .switch::before{
 	width: 198px;
 }
 
+/* Experience professionnelle */
+
+.exp{
+	display: flex;
+	align-items: top;
+	margin: 10px;
+	margin-bottom: 40px;
+	padding: 10px;
+}
+
+.exp-im img{
+	width: 270px;
+	margin-top: 20px;
+	height: 188px;
+	border-radius: 10px;
+}
+
+.exp-im{
+	width: -moz-fit-content;
+	width: fit-content;
+	align-items: center;
+}
+
 /* Compétences - Progress Bar */
 
 .comp{
@@ -406,10 +439,6 @@ body.dark .switch::before{
 	margin: 10px;
 	margin-bottom: 40px;
 	padding: 10px;
-}
-
-.comp .text{
-	font-size: 20px;
 }
 
 .comp hr{
@@ -481,10 +510,6 @@ svg{
 	margin: 5px;
 	font-size: 60px;
 	color: var(--sub-title-color);
-}
-
-.qualit .text{
-	font-size: 20px;
 }
 
 .qualit h4{
@@ -641,10 +666,6 @@ svg{
 	margin: 5px;
 	font-size: 60px;
 	color: var(--sub-title-color);
-}
-
-.cont .text{
-	font-size: 20px;
 }
 
 .cont h4{
