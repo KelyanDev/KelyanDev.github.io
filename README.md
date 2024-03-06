@@ -16,5 +16,13 @@ My Portfolio Website, which you can find by clicking here: https://kelyandev.git
   <p></p>
 </div>
 
+>[!IMPORTANT]  
+>You may encounter visual problems on browsers like Firefox  
+>Recommended browsers: Chrome, Edge
+
+<hr>
+
 >[!NOTE]
 >I'll try to always keep this web page updated
+
+<hr>
